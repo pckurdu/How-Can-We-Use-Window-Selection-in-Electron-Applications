@@ -1,0 +1,37 @@
+
+<div ng-mouseup="colorSelected()">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>Text to Copy</label>
+            <p id="selectText">Selected text</p><br/>
+             <input type="text" id="selectInput" ng-mouseup="inputSelected()" />
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-success" ng-click="textSelected()">Text Selected</button>
+            </div>
+            <div class="col-md-4">
+                    <button class="btn btn-success" ng-click="allSelected()">Select All</button>
+            </div>
+            
+            <div class="col-md-4">
+                    <button class="btn btn-success"  ng-click="copySelected()">Copy Selected</button>
+            </div>
+            
+        </div>
+        <div class="row">
+            <p>{{output}}</p>
+        </div>
+        
+        <div class="row">
+            <p ng-class="pclass">Please indicate the color you want for this area</p><br/>
+            <ul>
+                <li>blue</li>
+                <li>green</li>
+                <li>yellow</li>
+                <li>red</li>
+            </ul>
+
+        </div>
+    </div>
+</div>

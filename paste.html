@@ -1,0 +1,36 @@
+<div>
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" class="alert alert-info"  ng-model="text" ng-show="showtext==true"></input>
+                    </div> 
+                    <button type="submit" class="btn btn-success" ng-click="doPasteText()">Paste Text</button>
+                </div>
+            </div>
+               
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <p type="text" ng-model="text" id="p" ng-show="showhtml==true"></p>
+                        </div> 
+                        <button type="submit" class="btn btn-success" ng-click="doPasteHTML()">Paste HTML</button>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <a href="" id="bookmark" ng-show="showbookmark==true"></a>
+                    </div> 
+                    <button type="submit" class="btn btn-success" ng-click="doPasteBookmark()">Paste Bookmark</button>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <img class="img-thumbnail" ng-src="{{path}}" ng-model="img" ng-show="showImg==true">
+                        </div> 
+                        <button type="submit" class="btn btn-success" ng-click="doPasteImage()">Paste Image</button>
+                        
+                </div>
+            </div>
+</div>

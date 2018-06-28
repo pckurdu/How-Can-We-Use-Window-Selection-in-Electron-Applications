@@ -1,0 +1,44 @@
+<div lang="en">
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Text: </label>
+                        <input type="text" class="form-control" ng-model="text">
+                    </div> 
+                    <button type="submit" class="btn btn-success" ng-click="doCopyText()">Copy Text</button>
+                </div>
+            </div>
+    
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>HTML: </label>
+                            <input type="text" class="form-control" ng-model="html">
+                        </div> 
+                        <button type="submit" class="btn btn-success" ng-click="doCopyHTML()">Copy HTML</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" class="form-control" ng-model="title"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Url</label>
+                        <input type="text" class="form-control" ng-model="url" >
+                    </div>
+                    <button type="submit" class="btn btn-success" ng-click="doBookmark()">Copy Bookmark</button>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Image: </label>
+                            <input type="file" class="form-control" id="file-copy2" >
+                        </div> 
+                        <button type="submit" class="btn btn-success" ng-click="doCopyImage()">Copy Image</button>
+                        <img src=""  class="img-thumbnail" width="304" height="236" ng-src="{{path}}">
+                </div>
+            </div>
+</div>
